@@ -1,0 +1,1 @@
+*/2 * * * * /root/CS183/labs/two/pt3.sh /root/labs/two/lab2-test.txt /var/log/cs183/uptime.log
