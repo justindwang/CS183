@@ -5,15 +5,15 @@ find /bin /sbin /usr/sbin -user root -perm -4000 -exec ls -lah {} \;
 read -p "Enter to continue"
 echo 'finding files with setuid or setgid enabled'
 read -p "Enter to continue"
-find / -type f \( -perm -4000 -o -perm -2000 \) -exec ls -lah {} \;
+find / \( -perm -4000 -o -perm -2000 \) -exec ls -lah {} \;
 read -p "Enter to continue"
 echo 'finding files in /var that changed in last 20 min'
 read -p "Enter to continue"
-find /var -type f -mmin -20 -exec ls -lah {} \;
+find /var -mmin -20 -exec ls -lah {} \;
 read -p "Enter to continue"
 echo 'finding files in /var of zero length'
 read -p "Enter to continue"
-find /var -type f -size 0 -exec ls -lah {} \;
+find /var -size 0 -exec ls -lah {} \;
 read -p "Enter to continue"
 echo 'finding files in /dev that are not regular files and also not directories'
 read -p "Enter to continue"
